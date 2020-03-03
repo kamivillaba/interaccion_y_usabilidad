@@ -1,0 +1,28 @@
+.navbar {
+    border: 1px solid black;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+
+}
+nav ul {
+    float: right;
+    margin-right: 50px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #0c0910;
+    font-size: 25px;
+    text-decoration: none;
+  
+  }
+
+  img { 
+      height: 3rem;
+  }
