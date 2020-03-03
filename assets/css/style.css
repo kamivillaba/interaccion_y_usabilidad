@@ -1,3 +1,9 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     border: 1px solid black;
     height: 80px;
@@ -28,7 +34,7 @@ nav ul {
   }
 
   /** Ejercicio 2 **/
-   .container__button {
+   .container-button {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -52,3 +58,123 @@ nav ul {
       box-shadow: -6px 6px 6px 0px rgba(61, 71, 81, 0.4);
  }
  /** Ejercicio 3 **/
+
+
+ .container-one {
+     background-color: #7ac0e4;
+     height: 70vh;
+     width: 100%;
+     
+ }
+ .container-oner__inner {
+     margin-left: 10rem;
+ }
+ .container-two {
+    background-color: #f1eddc;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+ }
+ .sune__description h1 {
+     color:white;
+     font-weight: bold;
+     font-size: 4em;
+ }
+ .sune__description h2 {
+    color:white;
+    font-weight: lighter;
+ }
+ .sune-img {
+     padding-top: 20px;
+    height: 8rem;
+    animation-name: aparecer;
+    animation-duration: 5s;
+}
+.sune__description {
+    animation-name: aparecer-2;
+    animation-duration: 2s;
+}
+.umbrella img {
+    height: 8rem;
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+    position: absolute;
+    padding-top: 50px;
+  
+}
+.palm img {
+    position: absolute;
+    height: 8rem;
+    left: 60vw;
+    bottom:150px;
+    animation-name: aparecer-2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+.girl img {
+    position: absolute;
+    height: 8rem;
+    left: 70%;
+    top: 5rem;
+}
+.ball img {
+    animation-name: mover-ball;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-fill-mode:forwards;
+    transition-timing-function: linear:;
+    position: absolute;
+    height: 8rem;
+    top: 3rem;
+    left: 95vw;
+    
+}
+ @keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+ }
+ @keyframes aparecer-2 {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+ }
+ @keyframes mover {
+    0% {
+        margin-left: 0;
+        opacity: 0;
+    }
+    50% {
+        margin-left: 0;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 10em;
+    }
+}
+@keyframes mover-ball{
+    0% {
+        transform: translateX(-150px);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+   
+    100% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+}
